@@ -14,12 +14,12 @@ Bot = Client(
 
 API = "https://api.sumanjay.cf/covid/?country="
 
-START_TEXT = """Hello {},
-I am a simple corona information of a country telegram bot.
+START_TEXT = """ʜᴇʟʟᴏ {},
+ɪ ᴀᴍ ᴀ sɪᴍᴘʟᴇ ᴄᴏʀᴏɴᴀ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴏғ ᴀ ᴄᴏᴜɴᴛʀʏ ᴛᴇʟᴇɢʀᴀᴍ ʙᴏᴛ.
 
-Made by @i_am_albin_praveen"""
+ᴍᴀᴅᴇ ʙʏ [sᴀɴᴛʜᴜ❣️](https://t.me/musicupdates123)"""
 
-BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton('⚙ Join Updates Channel ⚙', url='https://telegram.me/musicwithalby')]])
+BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton('ɴᴇᴛᴡᴏʀᴋ', url='https://telegram.me/musicupdates123')]])
 
 
 @Bot.on_message(filters.private & filters.command(["start"]))
@@ -58,17 +58,17 @@ def covid_info(country_name):
         recovered = info['recovered']
         covid_info = f"""--**Covid 19 Information**--
 
-Country : `{country}`
-Actived : `{active}`
-Confirmed : `{confirmed}`
-Deaths : `{deaths}`
-ID : `{info_id}`
-Last Update : `{last_update}`
-Latitude : `{latitude}`
-Longitude : `{longitude}`
-Recovered : `{recovered}`
+ᴄᴏᴜɴᴛʀʏ : **{country}**
+ᴀᴄᴛɪᴠᴇᴅ : **{active}**
+ᴄᴏɴғɪʀᴍᴇᴅ : **{confirmed}**
+ᴅᴇᴀᴛʜs : **{deaths}**
+ɪᴅ : **{info_id}**
+ʟᴀsᴛ ᴜᴘᴅᴀᴛᴇ : **{last_update}**
+ʟᴀᴛɪᴛᴜᴅᴇ : **{latitude}**
+ʟᴏɴɢɪᴛᴜᴅᴇ : **{longitude}**
+ʀᴇᴄᴏᴠᴇʀᴇᴅ : **{recovered}**
 
-Made by @i_am_albin_praveen"""
+ᴍᴀᴅᴇ ʙʏ [sᴀɴᴛʜᴜ❣️](https://t.me/musicupdates123)"""
         return covid_info
     except Exception as error:
         return error

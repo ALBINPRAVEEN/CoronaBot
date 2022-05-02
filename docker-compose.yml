@@ -1,6 +1,6 @@
 version: "3.9"
 services:
-  worker: Dockerfile
+  worker: 
     build: .
     environment:
       API_HASH: $API_HASH
